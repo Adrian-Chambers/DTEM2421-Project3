@@ -11,17 +11,20 @@ body{
 }
 
 .page{
-    padding: 10px 5% 10px 5%;
-    min-height: 63vh;   /* to keep footer at bottom of page */
-}
-
-h1{ /* title for each page */
-    
+    padding: 15px 5% 10px 5%;
+    min-height: 50vh;   /* to keep footer at bottom of page */
 }
 
 a{
     color: var(--red);
     text-decoration: none;
+}
+
+h1{
+    background-color: var(--light-grey);
+    padding: 15px 5% 15px 5%;
+    margin: 0;
+    text-align: center;
 }
 
 a:hover{
@@ -37,8 +40,7 @@ hr{
     nav{
         background-color:var(--red);
         color: white;
-        padding: 10px;
-        margin-bottom: 10px 10px 0 10px;
+        padding: 10px 10px 10px 10px;
         text-align: center;
     }
 
@@ -49,17 +51,18 @@ hr{
     nav a{
         color: white;
         text-decoration: none;
-        padding: 0 5% 0 5%;
+        padding: 7px 5% 10px 5%;   
     }
 
     nav a:hover{
         background-color: var(--dark-red);
-        color: lightgray;
-
+        color: var(--gold);
+        border-bottom: 2px solid var(--gold);
     }
 
-    nav .highlighted{  /* link for current page */
-        color: lightgray;
+    nav .highlighted{  /* current page */
+        color: var(--gold);
+        border-bottom: 2px solid var(--gold);
     }
 
 /* Footer */
@@ -76,6 +79,7 @@ hr{
 /* Home */
     .button{
         background-color: var(--red);
+        border-bottom: 2px solid var(--dark-red);
         color: white;
         padding: 14px 25px;
         text-align: center;
@@ -85,7 +89,8 @@ hr{
 
     .button:hover{
         background-color: var(--dark-red);
-        color: white;
+        color: var(--gold);
+        border-bottom: 2px solid var(--gold);
     }
 
 /* About */
@@ -93,6 +98,7 @@ hr{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        margin-top: 15px;
         gap: 30px;
     }
 
