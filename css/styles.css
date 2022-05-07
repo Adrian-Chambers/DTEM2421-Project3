@@ -2,12 +2,8 @@
     --red: rgb(144,0,40);
     --dark-red: rgb(111, 0, 32);
     --dark-grey: rgb(51,51,51);
-    --light-grey: #e7ebe6;
+    --light-grey: rgb(231,235,230);
     --gold: rgb(226, 204, 141);
-}
-
-body{
-    
 }
 
 .page{
