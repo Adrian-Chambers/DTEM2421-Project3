@@ -1,34 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
+
 :root{
-    --red: rgb(144,0,40);
-    --dark-red: rgb(111, 0, 32);
-    --dark-grey: rgb(51,51,51);
-    --light-grey: rgb(231,235,230);
-    --gold: rgb(226, 204, 141);
+    --red: rgb(244, 111,96);
+    --light-grey: rgb(215, 217, 214);
+    --black: rgb(51, 51, 51);
+    --white: rgb(255, 255, 255);
 }
 
-.page{
-    padding: 15px 5% 10px 5%;
-    min-height: 50vh;   /* to keep footer at bottom of page */
+body{
+    color: var(--black);
+    font-family: 'Lato', sans-serif;
 }
+
+h1{
+    background-color: var(--light-grey);
+    padding: 20px 0 20px 0;
+    margin: 0;
+    text-align: center;
+}
+
 
 a{
     color: var(--red);
     text-decoration: none;
 }
 
-h1{
-    background-color: var(--light-grey);
-    padding: 15px 5% 15px 5%;
-    margin: 0;
-    text-align: center;
-}
-
 a:hover{
-    color: var(--gold);
+    color: var(--light-grey);
 }
 
 hr{
     border: 0.75px solid var(--light-grey);
+}
+
+.page{
+    padding: 25px 15% 25px 15%;
+    min-height: 50vh;   
 }
 
 /* Navigation */
@@ -36,47 +43,78 @@ hr{
     nav{
         background-color:var(--red);
         color: white;
-        padding: 10px 10px 10px 10px;
-        text-align: center;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        padding: 0 15% 0 15%;
     }
 
-    nav h2{
-        padding: 10px;
+    #nav-left{
+        width: 50%;
+    }
+
+    #nav-right{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        width: 50%;
+
     }
 
     nav a{
-        color: white;
-        text-decoration: none;
-        padding: 7px 5% 10px 5%;   
+        color: var(--light-grey);
+        padding: 25px 25px 25px 25px;
+        text-decoration: none; 
     }
 
     nav a:hover{
-        background-color: var(--dark-red);
-        color: var(--gold);
-        border-bottom: 2px solid var(--gold);
+        background-color: var(--black);
+        color: var(--white);
     }
 
     nav .highlighted{  /* current page */
-        color: var(--gold);
-        border-bottom: 2px solid var(--gold);
+        color: var(--white);
     }
 
 /* Footer */
 
     footer{
-        background-color: var(--dark-grey);
+        background-color: var(--black);
         color: white;
         font-size: 14px;
-        margin-top: 20px;
         padding: 10px;
         text-align: center;
     }
 
 /* Home */
+    #home{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 5%;
+        height: 70vh;
+        padding: 5% 15% 0 15%;
+        
+    }
+
+    #home-left{
+        width: 50%;
+    }
+
+    #home-right{
+        width: 50%;
+    }
+
+    #home-right img{
+        width: 100%;
+    }
+
     .button{
         background-color: var(--red);
         border-bottom: 2px solid var(--dark-red);
         color: white;
+        margin-top: 15px;
         padding: 14px 25px;
         text-align: center;
         text-decoration: none;
@@ -110,39 +148,54 @@ hr{
     }
 
     #achievements{
-        
+        padding: 10px 0 10px 0;
     }
 
     #skills{
-
+        padding: 10px 0 10px 0;
     }
 
 /* Projects */
+
+    #project1{
+        padding: 15px 0 10px 0;
+    }
 
     #project1 img{
         width: 45%;
     }
 
     #project1 figcaption{
-        background-color: var(--light-grey);  /* last value is opacity */
+        background-color: var(--light-grey);
+        padding: 10px 0 10px 0;
+        text-align: center;
+        width: 90%;
     }
 
-    #project1 figure{
+    #pictures{
+        padding: 5px 0 15px 0;
+    }
 
+    #project2{
+        padding: 15px 0 20px 0;
     }
 
     #documentary{       
         display: block;
         margin: auto;    /* center */
+        padding-top: 15px;
     }
 
 /* Contact */
-
-    #contact{
-
+    
+    #contact-links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 40px;
     }
 
-    .contact-link{
+    #contact a{
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -151,7 +204,7 @@ hr{
         width: 150px;
     }
 
-    .icon{
+    #contact img{
         display: inline-block;
         max-height: 35px;
         max-width: 30px;
