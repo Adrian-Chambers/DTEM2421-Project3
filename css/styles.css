@@ -26,13 +26,6 @@ hr{
     border: 0.75px solid var(--grey);
 }
 
-.heading{
-    background-color: var(--grey);
-    padding: 20px 0 20px 0;
-    margin: 0;
-    text-align: center;
-}
-
 .page{
     padding: 25px 15% 25px 15%;
     min-height: 50vh;   
@@ -53,6 +46,14 @@ hr{
 .button:hover{
     background-color: var(--grey);
     color: var(--black);
+}
+
+.red-text{
+    color: var(--red);
+}
+
+.white-text{
+    color: var(--white);
 }
 
 /* Navigation */
@@ -176,8 +177,21 @@ hr{
 
 /* Projects */
 
-    #project1{
-        padding: 15px 0 10px 0;
+    #projects{ 
+        padding: 25px 15% 25px 15%;
+    }
+
+    #projects h1{
+        background-color: var(--black);
+        border-radius: 5px;
+        color: var(--red);
+        padding: 15px;
+    }
+
+    #projects p{
+        background-color: var(--grey);
+        border-radius: 5px;
+        padding: 15px;
     }
 
     #project1 img{
@@ -185,18 +199,19 @@ hr{
     }
 
     #project1 figcaption{
-        background-color: var(--grey);
+        background-color: var(--red);
+        border-radius: 8px;
         padding: 10px 0 10px 0;
         text-align: center;
         width: 90%;
     }
 
-    #pictures{
-        padding: 5px 0 15px 0;
+    #project1{
+        padding-bottom: 35px;
     }
 
     #project2{
-        padding: 15px 0 20px 0;
+        padding: 35px 0 35px 0;
     }
 
     #documentary{       
