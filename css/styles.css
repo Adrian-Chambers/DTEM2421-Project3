@@ -55,12 +55,6 @@ hr{
     color: var(--white);
 }
 
-.grey-bg{
-    background-color: var(--light-grey);
-    border-radius: 8px;
-    padding: 15px 25px 45px 25px;
-}
-
 /* Navigation */
 
     nav{
@@ -77,7 +71,6 @@ hr{
     }
 
     #nav-left{
-        padding: 5px 0 5px 0;
         width: 50%;
     }
 
@@ -91,7 +84,7 @@ hr{
 
     nav a{
         color: var(--grey);
-        padding: 30px 25px 30px 25px;
+        padding: 25px 30px 25px 30px;
         text-decoration: none; 
     }
 
@@ -126,6 +119,14 @@ hr{
         
     }
 
+    #home h1{
+        font-size: 40px;
+    }
+
+    #home p{
+        font-size: 20px;
+    }
+
     #home-left{
         width: 50%;
     }
@@ -138,16 +139,20 @@ hr{
         width: 100%;
     }
 
+    #home .button{
+        font-size: 20px;
+    }
+
 /* About */
     #bio{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        margin: 55px 15% 55px 15%;
+        margin: 65px 15% 85px 15%;
         gap: 30px;
     }
 
-    #bio h2{
+    #bio h1{
         color: var(--red);
     }
 
@@ -173,29 +178,69 @@ hr{
     }
 
     #achievements{
+        align-items: center;
         background-color: var(--light-grey);
-        padding: 45px 15% 45px 15%;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 5px;
+        padding: 45px 15% 65px 15%;
+    }
+
+    #achievements-left{
+        width: 70%;
+    }
+
+    #achievements-right{
+        width: 30%;
+    }
+
+    #achievements img{
+        width: 100%;
     }
 
     #skills{
-        padding: 45px 15% 45px 15%;
+        align-items: center;
+        background-color: var(--red);
+        color: var(--white);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        padding: 45px 15% 65px 15%;
     }
 
-    #achievements li, #skills li{
-        padding-bottom: 10px;
+    #skills-left{
+        width: 50%;
+    }
+
+    #skills-left img{
+        width: 40%;
+    }
+
+    #skills-right{
+        width: 30%;
+    }
+
+    #skills-and-achievements li{
+        padding-bottom: 15px;
     }
 
 /* Projects */
 
+    .grey-bg{
+        background-color: var(--light-grey);
+        border-radius: 8px;
+        padding: 20px 30px 45px 30px;
+    }
+
     #projects{ 
-        margin: 55px 15% 55px 15%;
+        margin: 65px 15% 75px 15%;
     }
 
     #projects h1{
         background-color: var(--black);
         border-radius: 5px;
         color: var(--red);
-        padding: 15px;
+        padding: 20px 25px 20px 25px;
     }
 
     #projects p{
@@ -233,9 +278,25 @@ hr{
 /* Contact */
 
     #contact{
-        margin: 55px 15% 55px 15%;
-        min-height: 60vh; 
+        display: flex;
+        flex-flow: row wrap;
+        gap: 5%;
+        height: 70vh;
+        padding: 5% 15% 0 15%;
     }
+    
+    #contact-left img{
+        width: 100%;
+    }
+
+    #contact-left{
+        width: 45%;    
+    }
+    
+    #contact-right{
+        width: 50%;
+    }
+    
     
     #contact-links{
         display: flex;
@@ -244,17 +305,16 @@ hr{
         gap: 40px;
     }
 
-    #contact a{
+    #contact-right a{
         align-items: center;
         display: flex;
         flex-direction: row;
         gap: 10px;
         height: 30px;
         text-decoration: none;
-        min-width: 100px;
     }
 
-    #contact img{
+    #contact-right img{
         display: inline-block;
         max-height: 35px;
         max-width: 30px;
