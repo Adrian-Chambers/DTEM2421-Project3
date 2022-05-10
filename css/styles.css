@@ -26,11 +26,6 @@ hr{
     border: 0.75px solid var(--grey);
 }
 
-.page{
-    padding: 25px 15% 25px 15%;
-    min-height: 50vh;   
-}
-
 .button{
     background-color: var(--red);
     border-radius: 5px;
@@ -41,6 +36,10 @@ hr{
     text-align: center;
     text-decoration: none;
     
+}
+
+.button a{
+    color: white;
 }
 
 .button:hover{
@@ -54,6 +53,12 @@ hr{
 
 .white-text{
     color: var(--white);
+}
+
+.grey-bg{
+    background-color: var(--grey);
+    border-radius: 8px;
+    padding: 15px 25px 45px 25px;
 }
 
 /* Navigation */
@@ -104,7 +109,8 @@ hr{
 
     footer{
         background-color: var(--black);
-        color: white;
+        color: var(--grey);
+        font-style: italic;
         font-size: 14px;
         padding: 10px;
         text-align: center;
@@ -137,7 +143,7 @@ hr{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        margin: 25px 15% 25px 15%;
+        margin: 55px 15% 55px 15%;
         gap: 30px;
     }
 
@@ -163,22 +169,26 @@ hr{
     }
 
     #bio-right-inner{
-        padding: 10px 25px 10px 25px;
+        padding: 10px 30px 10px 30px;
     }
 
     #achievements{
         background-color: var(--light-grey);
-        padding: 25px 15% 25px 15%;
+        padding: 45px 15% 45px 15%;
     }
 
     #skills{
-        padding: 25px 15% 25px 15%;
+        padding: 45px 15% 45px 15%;
+    }
+
+    #achievements li, #skills li{
+        padding-bottom: 10px;
     }
 
 /* Projects */
 
     #projects{ 
-        padding: 25px 15% 25px 15%;
+        margin: 55px 15% 55px 15%;
     }
 
     #projects h1{
@@ -189,9 +199,7 @@ hr{
     }
 
     #projects p{
-        background-color: var(--grey);
-        border-radius: 5px;
-        padding: 15px;
+        padding-bottom: 15px;
     }
 
     #project1 img{
@@ -199,9 +207,11 @@ hr{
     }
 
     #project1 figcaption{
-        background-color: var(--red);
+        background-color: var(--black);
         border-radius: 8px;
+        color: var(--white);
         padding: 10px 0 10px 0;
+        margin-bottom: 40px;
         text-align: center;
         width: 90%;
     }
@@ -221,6 +231,11 @@ hr{
     }
 
 /* Contact */
+
+    #contact{
+        margin: 55px 15% 55px 15%;
+        min-height: 60vh; 
+    }
     
     #contact-links{
         display: flex;
@@ -234,8 +249,9 @@ hr{
         display: flex;
         flex-direction: row;
         gap: 10px;
+        height: 30px;
         text-decoration: none;
-        width: 150px;
+        min-width: 100px;
     }
 
     #contact img{
